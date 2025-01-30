@@ -1,0 +1,6 @@
+# directory ignore
+.idea
+.vscode/*
+
+# file ignore
+.DS_Store
