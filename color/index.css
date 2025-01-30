@@ -1,0 +1,33 @@
+/* aタグ用リセットスタイル */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-wrap {
+  display: flex;
+}
+
+@property --hue {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 200deg;
+}
+
+
+.text-wrap:hover .letter {
+  background-color: hsl(calc(var(--hue) + var(--index) * 8deg) 80% 70%);
+  color: #fff;
+}
+
+.letter {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  transition: 0.2s ease color, .2s ease background-color;
+  transition-delay: calc(var(--index) * 0.04s);
+  color: #fff;
+  background-color: darkblue;
+}

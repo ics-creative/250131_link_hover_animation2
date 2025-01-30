@@ -1,0 +1,28 @@
+/* デモ レイアウト用スタイル */
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* スクリーンリーダー読み上げ用 */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border-width: 0;
+  white-space: nowrap;
+}

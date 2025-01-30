@@ -1,0 +1,26 @@
+/* aタグ用リセットスタイル */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-wrap {
+  display: flex;
+  gap: 8px;
+}
+
+.letter {
+  overflow: hidden;
+  color: transparent;
+  text-shadow: 0 -1.5em 0 #000, 0 0 0 #000;
+  transition: text-shadow 0.2s;
+  transition-delay: calc(var(--index) * 0.04s);
+}
+
+.text-wrap:hover .letter {
+  text-shadow: 0 0 0 orangered, -1.5em 0 0 #000;
+}
+
+.text-wrap:hover .letter:nth-child(odd) {
+  text-shadow: 0 0 0 blue, 0 1.5em 0 #000;
+}

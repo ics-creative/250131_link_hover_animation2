@@ -1,0 +1,30 @@
+/* aタグ用リセットスタイル */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-wrap {
+  display: flex;
+  gap: 8px;
+}
+
+.text-wrap:hover .letter {
+  animation: sway 0.4s ease calc(0.04s * var(--index));
+}
+
+@keyframes sway {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.2em);
+  }
+  50% {
+    transform: translateX(0.5em);
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
