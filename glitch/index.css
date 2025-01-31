@@ -17,7 +17,7 @@ body {
 }
 
 .text-wrap:hover .letter {
-  animation: glitch 0.8s ease calc(0.03s * var(--index)) infinite;
+  animation: glitch 0.8s calc(0.03s * var(--index)) infinite;
   text-shadow: -1px -1px 0 deeppink, 1px 1px 0 cyan;
 }
 
